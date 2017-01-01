@@ -30,7 +30,7 @@ function respond() {
   } 
   else if(request.text && botRegexStop.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Stop appropriating black culture");
+    postMessage("http://daddyleagues.com/rbl/stats/player/passing");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {
