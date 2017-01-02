@@ -168,7 +168,7 @@ function respond() {
   }
   else if(request.text && botRegexSteelers.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.realballersleague.com/stream/steelers/index.html");
+    postMessage("http://www.realballersleague.com/stream/steelers");
     this.res.end();
   } 
   else if(request.text && botRegexBengals.test(request.text)) {
