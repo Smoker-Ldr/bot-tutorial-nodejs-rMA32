@@ -11,7 +11,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
+      botRegexGrade = /^\/grade/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexSteelers = /^\/steelers/; botRegexBengals = /^\/bengals/;
       botRegexSaints = /^\/saints/; botRegexFalcons = /^\/falcons/; botRegexLions = /^\/lions/; botRegexGiants = /^\/giants/;
       botRegexRaiders = /^\/raiders/; botRegexAftershocks = /^\/aftershocks/; botRegexEagles = /^\/eagles/; botRegexTexans = /^\/texans/;
@@ -60,7 +60,7 @@ function respond() {
     postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");
     this.res.end();
   } 
-  else if(request.text && botRegexGian.test(request.text)) {
+  else if(request.text && botRegexGrade.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/9V6ZnvD.png");
     this.res.end();
