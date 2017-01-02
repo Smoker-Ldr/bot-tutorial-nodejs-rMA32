@@ -202,7 +202,7 @@ function respond() {
     postMessage("http://www.realballersleague.com/stream/saints/index.html");
     this.res.end();
   } 
-  else if(request.text && botRegexSaints.test(request.text)) {
+  else if(request.text && botRegexFalcons.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.realballersleague.com/stream/falcons/index.html");
     this.res.end();
