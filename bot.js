@@ -231,7 +231,7 @@ function respond() {
   } 
   else if(request.text && botRegex4thdown.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://realballersleague.com/lg-rules/4thdownrule.html");
+    postMessage("http://realballersleague.com/lg-rules/4thdown/index.html");
     this.res.end();
   } 
   else if(request.text && botRegexSiege.test(request.text)) {
