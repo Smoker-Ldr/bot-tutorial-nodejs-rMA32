@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexRbl = /^\/rbl/; botRegexStop = /^\/stop/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
+      botRegexLivegif = /^\/live/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGrade = /^\/grade/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexSteelers = /^\/steelers/; botRegexBengals = /^\/bengals/;
       botRegexSaints = /^\/saints/; botRegexFalcons = /^\/falcons/; botRegexLions = /^\/lions/; botRegexGiants = /^\/giants/;
@@ -37,7 +37,7 @@ function respond() {
     postMessage("http://www.realballersleague.com/lg-rules/index.php");
     this.res.end();
   } 
-  else if(request.text && botRegexProp.test(request.text)) {
+  else if(request.text && botRegexLivegif.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.realballersleague.com/groupme/livegame.gif");
     this.res.end();
