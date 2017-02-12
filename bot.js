@@ -39,7 +39,7 @@ function respond() {
   } 
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/409x327.jpeg.08b5d95c51bb4897835cfe6b514f2f52.large");
+    postMessage("http://www.realballersleague.com/groupme/livegame.gif");
     this.res.end();
   }
   else if(request.text && botRegexKys.test(request.text)) {
