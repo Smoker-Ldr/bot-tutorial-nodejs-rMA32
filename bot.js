@@ -101,7 +101,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.realballersleague.com/lg-rules/index.php");
+    postMessage("http://www.realballersleague.com/lg-rules");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
