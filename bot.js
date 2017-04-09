@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexRbl = /^\/rbl/; botRegexStop = /^\/stop/;
-      botRegexLivegif = /^\/live/;botRegexKys = /^\/kys/; botRegexStatrestrictions = /^\/statrestrictions/; botRegexBrye = /^\/brye/;
+      botRegexLivegif = /^\/live/;botRegexKys = /^\/kys/; botRegexPlayingthecpu = /^\/cpu-rules/; botRegexBrye = /^\/brye/;
       botRegexGrade = /^\/grade/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexSteelers = /^\/steelers/; botRegexBengals = /^\/bengals/;
       botRegexSaints = /^\/saints/; botRegexFalcons = /^\/falcons/; botRegexLions = /^\/lions/; botRegexGiants = /^\/giants/;
@@ -47,9 +47,9 @@ function respond() {
     postMessage("http://www.wikihow.com/Tie-a-Noose");
     this.res.end();
   } 
-  else if(request.text && botRegexStatrestrictions.test(request.text)) {
+  else if(request.text && botRegexPlayingthecpu.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://realballersleague.com/groupmebot/statrestrictions.jpg");
+    postMessage("http://www.realballersleague.com/lg-rules/playingthecpu.html");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
